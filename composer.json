@@ -1,0 +1,23 @@
+{
+  "name": "wen-gg/webman-api-sign",
+  "type": "library",
+  "license": "MIT",
+  "description": "适用于webman的api签名",
+  "keywords": [
+    "webman",
+    "api",
+    "sign"
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Wengg\\WebmanApiSign\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "mosquito",
+      "email": "zwj1206_hi@163.com"
+    }
+  ]
+}
