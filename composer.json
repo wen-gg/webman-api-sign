@@ -8,7 +8,9 @@
     "api",
     "sign"
   ],
-  "require": {},
+  "require": {
+    "workerman/webman-framework": "*"
+  },
   "autoload": {
     "psr-4": {
       "Wengg\\WebmanApiSign\\": "src"

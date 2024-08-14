@@ -103,7 +103,7 @@ class ApiSignService
             throw new ApiSignException("签名验证失败", ApiSignException::SIGN_VERIFY_FAIL);
         }
         $ts = time();
-        if ($this->config['timeout'] && $this->config['timeout'] > 0 && ($data[$this->config['fields']['timestamp']] + $this->config['timeout'] < $ts || $data[$this->config['fields']['timestamp']] > $ts)) {
+        if ($this->config['timeout'] && $this->config['timeout'] > 0 && ($data[$this->config['fields']['timestamp']] + $this->config['timeout'] < $ts || $data[$this->config['fields']['timestamp']] - $this->config['timeout'] > $ts)) {
             throw new ApiSignException("签名超时", ApiSignException::SIGN_TIMEOUT);
         }
     }
